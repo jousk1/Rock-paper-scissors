@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Rock, paper, scissors! </title>
+    </head>
+    <body>  
+        <h1>Rock, paper, scissors!</h1>
+        <br>
+        <h2>You can choose a move from these 3 options!</h2>
+        <form method="POST">
+            <input type="radio" id="rock" name="move" value="rock">
+            <label for="rock">rock</label><br>
+            <input type="radio" id="paper" name="move" value="paper">
+            <label for="paper">paper</label><br>
+            <input type="radio" id="scissors" name="move" value="scissors">
+            <label for="scissors">scissors</label>
+            <br>
+            <button type="submit"> Count </button>
+        </form>
+
+        {% if result %}
+        <h2>Calculation results: </h2>
+        <p>{{result}}</p>
+        {% endif %}
+    </body>
+</html>
